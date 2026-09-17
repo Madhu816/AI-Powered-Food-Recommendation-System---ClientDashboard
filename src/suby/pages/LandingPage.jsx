@@ -1,16 +1,18 @@
 import React from 'react'
 import TopBar from '../components/TopBar'
 import ItemsDisplay from '../components/ItemsDisplay'
-import Chains from '../components/Chains'
 import FirmCollection from '../components/FirmCollection'
+import AiRecommadation from '../components/AiRecommadation'
+import TopRankings from '../components/TopRankings'
 
 const LandingPage = () => {
   return (
     <div>
       <TopBar/>
+      <AiRecommadation/>
       <div className="landingSection">
       <ItemsDisplay/>
-      <Chains/>
+      <TopRankings/>
       <FirmCollection/>
       </div>
     </div>

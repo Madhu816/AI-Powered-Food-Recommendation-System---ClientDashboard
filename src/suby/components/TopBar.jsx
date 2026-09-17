@@ -5,9 +5,13 @@ const TopBar = () => {
     return (
             <section className="topBarSection">
                 <div className="companyTitle">
-                    <Link to="/" className='link'>
+                    <a
+                      href="/"
+                      className='link'
+                      onClick={() => window.dispatchEvent(new Event("reset-ai-recommendation"))}
+                    >
                     <h2 style={{color:"orangered"}}>SUBY</h2>
-                    </Link>
+                    </a>
                 </div>
                 <div className="searchBar">
                     <input type="text" placeholder="search..." />
